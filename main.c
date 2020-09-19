@@ -23,7 +23,7 @@ void Sort(int array[MAXSIZE], int size)
 	printf("\nThe array entered is : \n");
 	displayArray(array,size);
 
-        for (i = 1 ; i < size : i++)
+        for (i = 1 ; i < size ; i++)
 	{
                 j = i;
                 while ( j > 0 && array[j-1] > array[j])
