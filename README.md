@@ -1,1 +1,1 @@
-# arrway_functions
+# array_functions
