@@ -1,11 +1,11 @@
 #include "unity.h"
-#include "factorial.h"
+#include "arrayfunction.h"
 /* Required by the unity test framework */
 void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
 
-void test_factorial(void)
+void test_arrayfunction(void)
 {
   TEST_ASSERT_EQUAL(120, factorial(5));
   TEST_ASSERT_EQUAL(720, factorial(6));
