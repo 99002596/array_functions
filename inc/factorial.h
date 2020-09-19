@@ -1,16 +1,20 @@
-/**
-* @file arrayfunction.h
-*
-*/
-#ifndef __ARRAYFUNCTION_H__
-#define __ARRAYFUNCION_H__
 
-/**
-* Calculates the factorial of integer number
-* @param[in] number for which factorial has to be found
-* @return Factorial of the number
-* @note Returns -1 for negative values
-*/
-int arrayfunction(int number);
+#ifndef __ARRAYFUNCTIONS_H__
+#define __ARRAYFUNCTIONS_H__
 
-#endif /* #ifndef __ARRAYFUNCTION_H__ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio_ext.h>
+
+
+int Sort(int array[MAXSIZE], int size);
+
+int findnum(int array[MAXSIZE],int size);
+
+int minmax(int array[MAXSIZE],int size);
+
+int descending(int array[MAXSIZE],int size);
+
+int insertion(int array[MAXSIZE],int size);
+
+#endif  /* #define __CALCULATOR_OPERATIONS_H__ */
