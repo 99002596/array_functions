@@ -4,3 +4,4 @@
 
 ![cppcheck-action](https://github.com/99002596/arrway_functions/workflows/cppcheck-action/badge.svg)
 ![CI](https://github.com/99002596/array_functions/workflows/CI/badge.svg)
+![Unit testing](https://github.com/99002596/array_functions/workflows/Unit%20testing/badge.svg)
