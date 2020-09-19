@@ -1,9 +1,9 @@
 /**
-* @file factorial.h
+* @file arrayfunction.h
 *
 */
-#ifndef __FACTORIAL_H__
-#define __FACTORIAL_H__
+#ifndef __ARRAYFUNCTION_H__
+#define __ARRAYFUNCION_H__
 
 /**
 * Calculates the factorial of integer number
@@ -11,6 +11,6 @@
 * @return Factorial of the number
 * @note Returns -1 for negative values
 */
-int factorial(int number);
+int arrayfunction(int number);
 
-#endif /* #ifndef __FACTORIAL_H__ */
+#endif /* #ifndef __ARRAYFUNCTION_H__ */
