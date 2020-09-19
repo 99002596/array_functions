@@ -1,6 +1,6 @@
 
-#ifndef __ARRAYFUNCTIONS_H__
-#define __ARRAYFUNCTIONS_H__
+#ifndef __ARRAYFUNCTION_H__
+#define __ARRAYFUNCTION_H__
 
 #include <stdio.h>
 #include <stdlib.h>
