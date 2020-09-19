@@ -5,20 +5,30 @@ void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
 
-void test_arrayfunction(void)
+void test_sort(void)
 {
-  TEST_ASSERT_EQUAL(120, factorial(5));
-  TEST_ASSERT_EQUAL(720, factorial(6));
+  TEST_ASSERT_EQUAL((1 2 3 4 5), sort(1 2 3 4 5));
+  TEST_ASSERT_EQUAL((2 5 8 10), sort(2 5 8 10));
 }
-void test_zero_one(void)
+void test_minmax(void)
 {
-  TEST_ASSERT_EQUAL(1, factorial(0));
-  TEST_ASSERT_EQUAL(1, factorial(1));
+  TEST_ASSERT_EQUAL((1 10), minmax(1 3 2 10));
+  TEST_ASSERT_EQUAL((0 5), minmax(0 2 4 5));
 }
-void test_negative(void)
+void test_findnum(void)
 {
-  TEST_ASSERT_EQUAL(-1, factorial(-5));
-  TEST_ASSERT_EQUAL(-1, factorial(-10));
+  TEST_ASSERT_EQUAL(5, findnum((1 2 3 4 5 6),(5)));
+  TEST_ASSERT_EQUAL(1, findnum((4 2 1 6 9),(4)));
+}
+void test_descending(void)
+{
+  TEST_ASSERT_EQUAL((6 5 4 3 2 1), descending(1 2 3 4 5 6));
+  TEST_ASSERT_EQUAL((9 8 7 6), descending(7 8 6 9));
+}
+void test_insertion(void)
+{
+  TEST_ASSERT_EQUAL((1 15 2 3 4 5 6), insertion((1 2 3 4 5 6),(2),(15)));
+  TEST_ASSERT_EQUAL(4 2 1 0 6 9, insertion((4 2 1 6 9),(4),(0)));
 }
 
 int test_main(void)
@@ -27,9 +37,12 @@ int test_main(void)
   UNITY_BEGIN();
 
 /* Run Test functions */
-  RUN_TEST(test_factorial);
-  RUN_TEST(test_zero_one);
-  RUN_TEST(test_negative);
+ 
+  RUN_TEST(test_sort);
+  RUN_TEST(test_minmax);
+  RUN_TEST(test_findnum);
+  RUN_TEST(descending);
+  RUN_TEST(test_insertion);
 
   /* Close the Unity Test Framework */
   return UNITY_END();
